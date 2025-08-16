@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>XO — Reinforcement Learning</title>
+  <link rel="stylesheet" href="/static/index.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <div class="brand">XO — Q-Learning</div>
+      <div class="chips">
+        <span class="chip">Flask</span>
+        <span class="chip">RL</span>
+        <span class="chip">Q-Learning</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card controls">
+      <div class="row">
+        <label class="lbl">ألعب كـ</label>
+        <div class="toggle">
+          <input type="radio" name="side" id="playX" value="X" checked>
+          <label for="playX">X</label>
+          <input type="radio" name="side" id="playO" value="O">
+          <label for="playO">O</label>
+        </div>
+
+        <button id="btnNew" class="btn primary">لعبة جديدة</button>
+        <span id="status" class="muted">جاهز</span>
+      </div>
+    </section>
+
+    <section class="card board-card">
+      <div id="board" class="board">
+        <button class="cell" data-i="0"></button>
+        <button class="cell" data-i="1"></button>
+        <button class="cell" data-i="2"></button>
+        <button class="cell" data-i="3"></button>
+        <button class="cell" data-i="4"></button>
+        <button class="cell" data-i="5"></button>
+        <button class="cell" data-i="6"></button>
+        <button class="cell" data-i="7"></button>
+        <button class="cell" data-i="8"></button>
+      </div>
+      <div class="hint">الذكاء يتعلم مسبقًا بــ Q-Learning. العب وحاول تهزمه 😄</div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="container">صنع بحب ❤️</div>
+  </footer>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
